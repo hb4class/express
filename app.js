@@ -56,8 +56,8 @@ app.get('/set/count',function(req,res){
   res.render('my_first_ejs',data);
 });
 app.get('/set/:num',function(req,res){
-  data.count=req.params.num;
-  res.render('my_first_ejs',data);
+  // data.count=req.params.num;
+  // res.render('my_first_ejs',data);
   if(req.params.num) setCounter(res,req.params.num);
   else {
     getCounter(res);
